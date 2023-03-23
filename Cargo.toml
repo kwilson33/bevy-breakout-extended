@@ -6,7 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = "0.10.0"
+# Specify a specific version
+# bevy = "0.10.0"
+# This will use the newest possible version from the Bevy repository
+bevy = { git = "https://github.com/bevyengine/bevy", branch = "main"}
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
